@@ -15,4 +15,4 @@
     7) git remote add origin https://github.com/ymcha1028/github.git (이 히스토리로 보내는 기능. 내 PC의 Repository와 Githus 간 연결고리)
     8) git remote -v (연결고리 확인용)
     9) git push origin master
-    10) git add . (업데이트 시)
+    10) 수정 -> git add . -> git commit -m "2nd History" -> git push origin master (업데이트 시)
