@@ -16,3 +16,6 @@
     8) git remote -v (연결고리 확인용)
     9) git push origin master
     10) 수정 -> git add . -> git commit -m "2nd History" -> git push origin master (업데이트 시)
+
+6. 프로젝트 다운방법
+    1) cmd 열고, 프로젝트 링크(깃허브 Repository의) git clone https://github.com/ymcha1028/util.git (뒤에 폴더 이름)
