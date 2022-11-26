@@ -19,3 +19,14 @@
 
 6. 프로젝트 다운방법
     1) cmd 열고, 프로젝트 링크(깃허브 Repository의) git clone https://github.com/ymcha1028/util.git (뒤에 폴더 이름)
+
+7. 프로젝트 협업 시 업로드 방법
+    1) 절차는 git add . 및 git commit -m "history name" 까지는 같음
+    2) git checkout -b testman (팀원을 위해 공간을 새로 생성)
+    3) git push origin testman
+    4) 팀원은 github 사이트 Repository로 가서, Compare & pull request 버튼을 누르고, comment를 남김
+    6) Master는 github 사이트 Repository로 가서, Pull request 로 가서 확인한다. 그 후 Merge pull request를 누른다.
+
+8. 동기화작업
+    1) git add . 및 git commit -m "testtest"
+    2) git pull origin master (push 아님)
