@@ -1,0 +1,44 @@
+파이썬 환경 컴퓨터 세팅 방법:
+
+1) 파이썬 다운로드:
+https://www.python.org/downloads/windows/
+접속하여,
+Python 3.7.2 - Dec. 24, 2018 의
+Download Windows x86-64 executable installer 다운로드
+
+후, 설치.
+[주의] Add_PATH 추가하는 것 잊지말기
+
+
+2) 아나콘다 다운로드:
+https://repo.anaconda.com/archive/
+접속하여,
+Anaconda3-2018.12-Windows-x86_64.exe 614.3M 2018-12-21 13:14:34 8d068f924a77e8d015906e81e91b31ab
+Anaconda3-2018.12-Linux-x86_64.sh 652.5M 2018-12-21 13:13:06
+
+다운로드
+
+후 설치.
+
+[주의] Add_PATH 추가하는 것 잊지말기
+
+*) 아나콘다 설치 후, cmd 창에서 python --version 확인 하면
+3.7.1로 변경될 수도 있음.. =>>> 그게 아니라, 둘다 설치된 것이고, visual studio code에서 interpeter를 선택할 수 있음
+
+
+3) Visual Studio Code 다운로드 후 설치
+
+[모듈 업데이트]
+4) pyqt5 의 경우 import가 안 되었다.
+pip uninstall pyqt5 하고 pip install pyqt5 해도 안되었다.
+다시 삭제 후, pip3 install pyqt5 로 했다. 되는 것 같다.
+
+아마 pip 이 구버전이라 그런 것 같다.
+
+더불어, 안내 메시지에 따라, python -m pip install --upgrade pip 도 해주었다.
+
+5) jwt 설치
+pip install pyjwt==1.4.0
+안된다면..
+
+visual studio code에서 interpeter를 선택할 수 있음 이거 맞는 것으로 선택해주면 잘 돌아감

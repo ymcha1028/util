@@ -1,0 +1,68 @@
+Server/Django
+[CentOS] Python 3.7 설치
+2019. 9. 18. 11:56
+
+둥근 레이아웃을 쉽게 - RoundableLayout
+
+
+
+기본적으로는 Python 2.7 이 설치되어있으므로, 그와 충돌을 피하기 위한 방법도 필요하다.
+
+
+2.7 to 3.7
+
+$ sudo yum install gcc openssl-devel  libffi-devel bzip2-devel 
+
+$ wget https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tgz ( 최신 버전으로 설치 )
+
+$ tar xzf Python-3.7.3.tgz 
+
+ 
+
+$ cd Python-3.7.3
+
+
+$ ./configure --enable-optimizations
+
+$ sudo make altinstall 
+
+ 
+
+설치가 완료된다. 
+
+ 
+
+$ python3 -v 과 같이, 커맨드 명령어로 바로 쓰고 싶다면 링크를 걸어주어야한다.
+
+ 
+
+$ python3 -v  처럼 python 버전을 주어 사용하려면,
+
+$ sudo ln -s /usr/local/bin/python3.7 /bin/python3
+ 
+
+$ python -v 처럼 python3 를 main으로 쓰고 싶다면, 
+
+$ sudo ls -l /bin/python* 
+
+$ sudo unlink /bin/python 
+
+$ sudo ln -s /usr/local/bin/python3.7 /bin/python 
+ 
+
+Hot Ez Ex) 경로 지정 후, /bin/python으로 링크 지정을 했을 경우,
+/usr/libexec/urlgrabber-ext-down과 /usr/bin/yum 파일에 python2.7 버전 dependency가 존재하므로,
+
+두 파일의 맨 위 #! /usr/bin/python 부분을 #! /usr/bin/python2.7로 변경해야 에러나지 않는다
+
+또한 AWS AMI2 의 경우 amazon-linux-extras가 python2.7 dependency 이기 때문에, 위 방법을 쓸 경우 실행이 되지 않는다.
+
+ 
+
+ 
+
+추천하는 것은 첫번째 방법으로 한 뒤 $python3 -v 등으로 쓰되, pyvenv 등 파이썬 가상환경으로 버전을 달리쓰자
+
+
+-- 출처 --
+https://zladnrms.tistory.com/19
