@@ -1,1 +1,15 @@
 
+1. iwinv 신청
+2. 크롬 원격 데스크톱 설치
+3. tortoiseSVN 설치 (ID, PW는 MASTER 서버의 visual SVN manager에서 확인가능, ID:cha / PW힌트: 1c!)
+
+프로그램 환경설정
+- MASTER server의 vscode terminal에서 python --version (3.12.8)
+  https://www.python.org/downloads/release/python-3128/
+- vs code 설치
+  - 프로젝트 열고, 터미널 열어서
+    > python -m venv .venv (꼭 해야하는건지 모르겠음)
+    > python extension 팝업 설치
+    > terminal.scrollback 10000 으로 변경
+    > 그냥 바로 pip install -r requirements.txt
+    > 그 다음 바로 main.py 실행
